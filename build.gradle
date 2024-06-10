@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.1.0'
+    testImplementation 'junit:junit:4.13'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task testNGTest(type: Test) {
+    useTestNG()
+}
+
+task junit4Test(type: Test) {
+    useJUnit()
+}
