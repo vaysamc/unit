@@ -16,7 +16,7 @@ public class CashbackHackServiceJUnit4 {
     }
 
     @Test
-    public void shouldReturn0IfAmountIs1000() {
+    public void mustReturn0IfAmountIs1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int expected = 0;
